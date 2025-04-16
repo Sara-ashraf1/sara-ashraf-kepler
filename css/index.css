@@ -1,0 +1,41 @@
+body {
+    background-color: pink;
+    color: navy;
+    font-family: 'Times New Roman';
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    font-family:'Trebuchet MS';
+    background-color: beige;
+    border: maroon groove 5px;
+    padding: 5px;
+}
+
+h2 {
+    font-size: 23px;
+    color: teal;
+}
+
+section {
+    margin-top: 16px;
+    margin-bottom: 16px;
+    border: dotted magenta;
+    padding: 12px;
+}
+
+ul {
+    list-style-type: square;
+    color: blue;
+}
+
+a {
+    color: green;
+    font-family:'Lucida Sans';
+}
