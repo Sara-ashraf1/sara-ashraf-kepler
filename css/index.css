@@ -1,5 +1,5 @@
 body {
-    background-color: pink;
+    background-color: lavender;
     color: navy;
     font-family: 'Times New Roman';
 
@@ -7,27 +7,52 @@ body {
     margin-bottom: 20px;
 }
 
+.navig {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.navlink {
+    margin: 2px 8px;
+    color: maroon;
+    font-family: Cambria;
+    border: 4px goldenrod ridge;
+    padding: 9px;
+    text-align: center;
+    background-color: white;
+    width: 120px;
+}
 
 h1 {
     text-align: center;
     font-size: 30px;
     font-weight: bold;
     font-family:'Trebuchet MS';
-    background-color: beige;
-    border: maroon groove 5px;
+    background-color: lavenderblush;
+    border: maroon groove 2px;
     padding: 5px;
+    color: mediumvioletred;
+    width: 500px;
+    margin: 30px auto;
 }
 
 h2 {
     font-size: 23px;
     color: teal;
+    text-align: center;
+}
+
+h3 {
+    color: maroon;
 }
 
 section {
     margin-top: 16px;
     margin-bottom: 16px;
-    border: dotted magenta;
+    border: dotted mediumseagreen;
     padding: 12px;
+    background-color: blanchedalmond;
 }
 
 ul {
@@ -38,4 +63,31 @@ ul {
 a {
     color: green;
     font-family:'Lucida Sans';
+}
+
+#Experience {
+    display: flex;
+}
+
+.language {
+    margin: 40px 10px;
+    text-align: center;
+}
+
+#Connect {
+    display: flex;
+}
+
+.Link {
+    margin-top: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+img {
+    width: 90px;
+    height: 90px;
+    margin: 10px;
 }
