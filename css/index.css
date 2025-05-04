@@ -1,4 +1,5 @@
 body {
+    padding: 0px;
     background-color: lavender;
     color: navy;
     font-family: 'Times New Roman';
@@ -17,7 +18,7 @@ body {
     margin: 2px 8px;
     color: maroon;
     font-family: Cambria;
-    border: 4px goldenrod ridge;
+    border: 5px goldenrod ridge;
     padding: 9px;
     text-align: center;
     background-color: white;
@@ -50,7 +51,7 @@ h3 {
 section {
     margin-top: 16px;
     margin-bottom: 16px;
-    border: dotted mediumseagreen;
+    border: dotted maroon 5px;
     padding: 12px;
     background-color: blanchedalmond;
 }
@@ -90,4 +91,68 @@ img {
     width: 90px;
     height: 90px;
     margin: 10px;
+}
+
+
+/*Media query for mobile devices*/
+@media (max-width: 500px)  {
+    body {
+        background-color: rgb(214, 214, 231);
+        margin: 30px 20px;
+    }
+
+    h1 {
+        font-size: 20px;
+        font-style: bold;
+        color: rgb(51, 5, 5);
+        background-color: rgb(248, 211, 230);
+        width: 94%;
+    }
+
+    h2 {
+        color: green;
+    }
+
+    .navlink {
+        padding: 0.7em;
+        font-size: 0.6rem;
+    }
+   
+    section {
+        border: ridge goldenrod;
+        background-color: rgb(248, 232, 209);
+    }
+
+}
+
+/*Media query for tablet devices*/
+@media (min-width: 501px) and (max-width: 1100px) {
+    h2 {
+        color: palevioletred;
+    }
+
+    ul {
+        margin: 10px;
+        background-color: beige;
+    }
+
+    h1 {
+        font-size: 23px;
+        font-style: bold;
+        color: rgb(51, 5, 5);
+        background-color: rgb(195, 160, 186);
+        width: 75%;
+    }
+
+    section {
+        border: groove brown 8px;
+        background-color: rgb(201, 223, 220);
+    }
+
+    .navlink {
+        padding: 0.8em 1.1em;
+        text-decoration: none;
+        font-size: 0.8rem;
+    }
+
 }
