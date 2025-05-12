@@ -93,6 +93,17 @@ img {
     margin: 10px;
 }
 
+#Skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#Skills li {
+    padding: 0.5em;
+    color: navy;
+}
 
 /*Media query for mobile devices*/
 @media (max-width: 500px)  {
