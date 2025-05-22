@@ -133,6 +133,19 @@ img {
     display:block;
 }
 
+#Projects ul {
+    display: flex;
+}
+
+#Projects li {
+    padding: 0.5em;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    color: green;
+    font-size: 16px;
+}
+
 /*Media query for mobile devices*/
 @media (max-width: 500px)  {
     body {
