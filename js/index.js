@@ -1,17 +1,21 @@
 
+// creating the footer
 const footer = document.createElement('footer');
 document.body.appendChild(footer);
 
 const body = document.querySelector('body');
 
+// retrieving the current year
 let today = new Date();
 let thisYear = today.getFullYear();
 
+// adding copyright to the footer
 const copyright = document.createElement('p');
 copyright.innerHTML = `Sara Ashraf &#169; ${thisYear}`;
 
 footer.appendChild(copyright);
 
+// Skills section
 const skills = ['JavaScript', 'HTML', 'CSS', 'MySQL', 'Video Editing', 'Python'];
 
 const skillsSection = document.getElementById('Skills');
@@ -23,6 +27,7 @@ for (const s of skills) {
     skillsList.appendChild(skill);
 }
 
+// Leave a Message form
 const messageForm = document.getElementsByName("leave_message")[0];
 messageForm.addEventListener("submit", (event) => {
     
@@ -60,6 +65,8 @@ messageForm.addEventListener("submit", (event) => {
     event.target.reset();
 } )
 
+
+// API calls for repositories
 fetch('https://api.github.com/users/Sara-ashraf1/repos')
 .then(response => {
     if (!response.ok) {
@@ -75,8 +82,9 @@ fetch('https://api.github.com/users/Sara-ashraf1/repos')
     const projectList = projectSection.querySelector('ul');
 
     for (let i = 0; i < repositories.length; i++) {
+        const repository = repositories[i];
         const project = document.createElement('li');
-        project.innerText = repositories[i].name;
+        project.innerHTML = `<a href="https://github.com/Sara-ashraf1/${repository.name}" target="_blank">${repository.name}</a>`;
         projectList.appendChild(project);
 }
 })
